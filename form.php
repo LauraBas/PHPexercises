@@ -27,15 +27,12 @@
                     <select name="city" placeholder="City">
                     <option value="Barcelona">Barcelona</option>
                     <option value="Madrid">Madrid</option>
-                    <option value="Sevilla">Sevilla</option>
-                    
+                    <option value="Sevilla">Sevilla</option>                    
                     </select>
                 </div>
                 <div class="form-group">
                 <label><input name="role" value="Teacher" type="radio"> Teacher</label>
-                <label><input name="role" value="Student"type="radio"> Student</label>
-                   
-                     
+                <label><input name="role" value="Student" type="radio"> Student</label>                                        
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
             </form>
