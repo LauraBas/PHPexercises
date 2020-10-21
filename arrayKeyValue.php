@@ -30,7 +30,7 @@ echo '<table class="table table-striped">';
 foreach ( $users as $row ) {
         echo '<tr>';
         foreach ( $row as $cell ) {
-                echo '<td>'.$cell.'</td>';
+                echo "<td>$cell</td>";
         }
         echo '</tr>';
 }
