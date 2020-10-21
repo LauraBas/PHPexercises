@@ -10,6 +10,16 @@
     .container{
         display: flex;
     }
+    .card-header{
+        text-align: center;
+    }
+    .card-title{
+        
+        text-align: start;
+    }
+    .card-footer {
+        text-align: center;
+    }
 </style>
 <body>   
     <section>
@@ -19,20 +29,26 @@
         public String $title;
         public String $director;
         public String $image;
+        public Float $rating;
 
-        public function __construct(String $title, String $director, String $image) 
+        public function __construct(String $title, String $director, String $image, Float $rating) 
         {
+            if ($rating < 1 || $rating > 10) {
+                return "The rating must be between 1-10";
+            };
             $this->title = $title;
             $this->director = $director;
             $this->image = $image;
+            $this->rating = $rating;
+
         }
     }
 
 
 
-    $titanic = new Movie("Titanic", "James Cameron",'titanic.jpg' );
-    $inception = new Movie("Inception", "Christopher Nolan",'inseption.jpg');
-    $amelie = new Movie("Amelie", "Jean-Pierre Jeunet",'amelie.jpg');
+    $titanic = new Movie("Titanic", "James Cameron",'titanic.jpg', 6.3);
+    $inception = new Movie("Inception", "Christopher Nolan",'inseption.jpg', 10);
+    $amelie = new Movie("Amelie", "Jean-Pierre Jeunet",'amelie.jpg', 9.5);
 
     $films = [$titanic, $inception, $amelie];
 
@@ -43,8 +59,9 @@
             <article class='card' >
                     <main class='card-body'>
                         <h5 class="card-header">$film->title</h5>
-                        <p class="card-title">$film->director</p>
+                        <p class="card-title">$film->director</p> 
                         <img class='card-img-top'src='$film->image'/>
+                        <div class="card-footer bg-transparent border-success">Rating $film->rating</div>
                     </main>
                 </article>
             </div>
