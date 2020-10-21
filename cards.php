@@ -44,13 +44,12 @@
         }
     }
 
-
-
     $titanic = new Movie("Titanic", "James Cameron",'img/titanic.jpg', 6.3);
     $inception = new Movie("Inception", "Christopher Nolan",'img/inseption.jpg', 10);
     $amelie = new Movie("Amelie", "Jean-Pierre Jeunet",'img/amelie.jpg', 9.5);
+    $tenet = new Movie("Tenet", "Christopher Nolan", 'img/tenet.jpg', 10);
 
-    $films = [$titanic, $inception, $amelie];
+    $films = [$titanic, $inception, $amelie, $tenet];
 
     foreach ($films as $film){
         echo <<<TAG
