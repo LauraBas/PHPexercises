@@ -24,11 +24,16 @@
                     <input type="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <input type="selector" name="city" placeholder="City">
+                    <select name="city" placeholder="City">
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Sevilla">Sevilla</option>
+                    
+                    </select>
                 </div>
                 <div class="form-group">
-                <label><input name="role" type="radio"> Teacher</label>
-                <label><input name="role" type="radio"> Student</label>
+                <label><input name="role" value="Teacher" type="radio"> Teacher</label>
+                <label><input name="role" value="Student"type="radio"> Student</label>
                    
                      
                 </div>

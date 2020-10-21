@@ -2,10 +2,13 @@
 
 Simple exercices to start in PHP. 
 
-- Lista en un documento HTML usando un Array en PHP
--Haz un formulario con un input de texto, un input de tipo “radio” y otro de tipo selector. Usa el Método POST y escribe en un documento HTML los datos enviados.
--Usa un array clave-valor para definir los datos de un usuario y escríbelos en una tabla en un documento HTML.
-Usa una clase para definir una película. Crea varios objetos Película y dibujarlos en “cards” en un documento HTML.
+- Create a list in an html using an array in PHP. 
+
+- Create a form containing an input type text, an input type radio and input type selector. Use POST method and write an html page with the sended information.
+
+-Use a key-value array to define the user information and writte it in a table in html.
+
+-Use a class to define a movie. Create  several Movie objects and draw it in cards in html.
 
 ## Pre-Requisites
 
