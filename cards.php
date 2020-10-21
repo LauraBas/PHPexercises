@@ -32,8 +32,9 @@
 
     $titanic = new Movie("Titanic", "James Cameron",'titanic.jpg' );
     $inception = new Movie("Inception", "Christopher Nolan",'inseption.jpg');
+    $amelie = new Movie("Amelie", "Jean-Pierre Jeunet",'amelie.jpg');
 
-    $films = [$titanic,$inception];
+    $films = [$titanic, $inception, $amelie];
 
     foreach ($films as $film){
         echo <<<TAG
